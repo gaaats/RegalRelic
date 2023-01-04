@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navvbvbvb"
+    app:startDestination="@id/startyFragment">
+
+    <fragment
+        android:id="@+id/startyFragment"
+        android:name="com.ferrero.appla.fraag.StartyFragment"
+        android:label="fragment_starty"
+        tools:layout="@layout/fragment_starty" >
+        <action
+            android:id="@+id/action_startyFragment_to_gamyyyFragment"
+            app:destination="@id/gamyyyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamyyyFragment"
+        android:name="com.ferrero.appla.fraggg2.GamyyyFragment"
+        android:label="fragment_gamyyy"
+        tools:layout="@layout/fragment_gamyyy" >
+        <action
+            android:id="@+id/action_gamyyyFragment_to_relooadFragment"
+            app:destination="@id/relooadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/relooadFragment"
+        android:name="com.ferrero.appla.fraag.RelooadFragment"
+        android:label="fragment_relooad"
+        tools:layout="@layout/fragment_relooad" >
+        <action
+            android:id="@+id/action_relooadFragment_to_gamyyyFragment"
+            app:destination="@id/gamyyyFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/gamyyyFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
